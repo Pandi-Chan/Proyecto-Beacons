@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="estilo.css">
+ <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/estilo.css">
+     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+</head>
+<body>
+	<!-- Inicio Contenedor de la Página-->
+	<div class="contenedor">
+
+		<!-- Inicio Header-->
+		<header>
+			<!-- Zona del Logo en el Header-->
+			<div class="logo">
+				<img src="img/logo.jpg"><a href="">DuocBeacons</a>
+			</div>
+			<!-- Menú del Header -->
+			<nav>
+				<a href="">Inicio</a>
+				<a href="#info">Información</a>
+				<a href="#mapa">Mapa</a>
+				<a href="#contacto">Contacto</a>
+			</nav>
+		</header>
+
+		<!-- Imagen Encima del Carrusel-->
+		<div class="image">
+		<img src="img/sede.jpg">
+		</div>
+
+		<!-- Carrusel -->
+        <div class="carru">
+	        <div id="carrusel">
+	            <div><img src="img/carrusel/C1.jpg"><div id="txtimagen"> "Ahora Darwin está Tranquilo" <br> - asdas</div></div>
+	            <div><img src="img/carrusel/C2.jpg"><div id="txtimagen"> "Ahora Darwin está Tranquilo" <br> - reas</div></div>
+	        </div>
+        </div>
+
+		<!-- Cuadros Bajo el Carrusel-->
+		<div class="info" id="info">
+			<div class="caja"><h2>¿Qué es DuocBeacons?</h2>
+				<div id="texto">Aliquam efficitur ligula a orci pellentesque ullamcorper. Proin ipsum nisi, placerat ac laoreet sit amet, tincidunt id est. Mauris luctus fringilla posuere. Integer vitae aliquet lectus, efficitur blandit velit. Duis libero lorem, aliquam nec ipsum ac, molestie fringilla sem. Donec vitae tincidunt tortor, sed ullamcorper nulla.</div>
+			</div>
+
+			<div class="caja"><h2>Nuestra Sede</h2>
+				<div id="texto">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis velit diam, tempor quis nunc vel, cursus volutpat dolor. Praesent rutrum, urna sit amet dapibus fermentum, lectus nisl accumsan enim, cursus consequat eros sapien auctor nulla. Phasellus sit amet erat eu purus aliquam imperdiet</div>
+			</div>
+			<div class="caja"><h2>Titulo Lorem3</h2>
+				<div id="texto">Aliquam efficitur ligula a orci pellentesque ullamcorper. Proin ipsum nisi, placerat ac laoreet sit amet, tincidunt id est. Mauris luctus fringilla posuere. Integer vitae aliquet lectus, efficitur blandit velit. Duis libero lorem, aliquam nec ipsum ac, molestie fringilla sem. Donec vitae tincidunt tortor, sed ullamcorper nulla.</div>
+			</div>
+		</div>
+
+    <!-- Zona Mapa Sede -->
+    <div class="mapa" id="mapa">
+      <h1>MAPA</h1>
+      <div>IMAGEN</div>
+      <div>IMAGEN</div>
+    </div>
+
+    <!-- Zona de Contacto -->
+    <div class="contacto" id="contacto">
+      <h1>NOS INTERESA SABER TU OPINIÓN</h1>
+      <div id="datos">
+        <h3>Para enviar tu comentario, completa los siguientes campos:</h3>
+        <div id="input">
+          <div>
+            Nombre: <input class="form-control" id="name" name="name" type="text" required>
+          </div>
+          <div>
+            Correo: <input class="form-control" id="email" name="email" type="email" required>
+          </div>
+          <div>
+            Comentario: <textarea class="form-control" id="comments" name="comments"></textarea>
+          </div>
+          <div>
+            <button id="enviar" type="submit">Enviar</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+	</div>
+
+  <button onclick="subir()" id="arriba" title="Subir">Subir</button>
+	<!-- Script Carrusel -->
+	<script src="js/carrusel.js"></script>
+</body>
+</html>
