@@ -173,6 +173,16 @@ header nav a:hover{
 	margin:20px;
 }
 
+#ubicacion{
+	text-align: center;
+	padding: 5px;
+}
+
+#googleMap{
+	height:400px;
+	width:100%;
+}
+
 .contacto{
 	width: 100%;
 	background: #483D8B;
