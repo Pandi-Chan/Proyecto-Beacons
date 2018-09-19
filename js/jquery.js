@@ -17,3 +17,12 @@ function subir() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Funcion del Mapa para Duoc
+function mapa() {
+  var centro = new google.maps.LatLng(-33.433088010484276,-70.61483320000002);
+  var mapProp = {center:centro, zoom:15, scrollwheel:true, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker = new google.maps.Marker({position:centro});
+  marker.setMap(map);
+}
